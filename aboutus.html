@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Coding Team</title>
+  <link rel="icon" href="https://www.chitkarauniversity.edu.in/wp-content/themes/chitkara/images/CU_logo-5.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <style>
+    :root {
+      --bg-dark: #111;
+      --card-bg: #1e1e1e;
+      --text-light: #f0f0f0;
+      --accent: #ff5555;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      background-color: #000;
+      border-bottom: 1px solid #444;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: white;
+      text-shadow: 2px 2px 3px #555;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    article.profile-card {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      padding: 20px;
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    article.profile-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .profile-card img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
+      margin-bottom: 15px;
+    }
+
+    .profile-card h2 {
+      font-size: 1.2em;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .profile-card p {
+      font-size: 0.95em;
+      margin: 4px 0;
+      color: #ccc;
+    }
+
+    .label {
+      font-weight: bold;
+      color: white;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+      font-size: 1.3em;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 6px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: var(--accent);
+      transform: scale(1.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      border-top: 1px solid #444;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meet Our Coding Team</h1>
+  </header>
+
+  <main>
+    <section class="team">
+      
+      <article class="profile-card">
+        <img src="NANISH.jpg" alt="Nanish Garg">
+        <h2>Nanish Garg</h2>
+        <p><span class="label">ID:</span> 2411981367</p>
+        <p><span class="label">Email:</span><br> nanish1367.be24@chitkarauniversity.edu.in</p>
+        <p><span class="label">Phone:</span> 9862419126</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+          <a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://snapchat.com/" target="_blank"><i class="fa fa-snapchat"></i></a>
+          <a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+      </article>
+
+      <article class="profile-card">
+        <img src="NIKHIL.jpg" alt="Nikhil Sehgal">
+        <h2>Nikhil Sehgal</h2>
+        <p><span class="label">ID:</span> 2411981376</p>
+        <p><span class="label">Email:</span><br> nikhil1376.be24@chitkarauniversity.edu.in</p>
+        <p><span class="label">Phone:</span> 9863156325</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+          <a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://snapchat.com/" target="_blank"><i class="fa fa-snapchat"></i></a>
+          <a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+      </article>
+
+      <article class="profile-card">
+        <img src="Narveer.jpg" alt="Narveer.jpg">
+        <h2>Narveer</h2>
+        <p><span class="label">ID:</span> 2411981368</p>
+        <p><span class="label">Email:</span><br> narveer1368.be24@chitkarauniversity.edu.in</p>
+        <p><span class="label">Phone:</span> 9874563256</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+          <a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://snapchat.com/" target="_blank"><i class="fa fa-snapchat"></i></a>
+          <a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+      </article>
+
+      <article class="profile-card">
+        <img src="LAKSHAY.jpg" alt="Lakshay">
+        <h2>Lakshay</h2>
+        <p><span class="label">ID:</span> 2411981311</p>
+        <p><span class="label">Email:</span><br> lakshay1311.be24@chitkarauniversity.edu.in</p>
+        <p><span class="label">Phone:</span> 8091156879</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://facebook.com/" target="_blank"><i class></i>
