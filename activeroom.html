@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Active Room</title>
+  <link rel="stylesheet" href="activeroom.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Coding<span>Competition</span></div>
+    <nav>
+      <ul>
+        <li onclick="window.location.href='index.html'">🏠 Home</li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <section class="room-container">
+    <h1>Copy And Share This Link</h1>
+    <div class="link-box">
+      <input type="text" id="room-link" readonly />
+      <button id="copy-btn">📋 Copy</button>
+    </div>
+    <button id="start-btn">Start</button>
+    <div id="question-container"></div>
+  </section>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="activeroom.js"></script>
+</body>
+</html>
