@@ -1,0 +1,138 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #272727;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #1e1e1e;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 34px;
+    font-weight: bold;
+    color: #8d61b6;
+    padding-left: 600px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: all 0.1s ease-in-out;
+}
+
+/* Button background */
+nav ul li::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/* Dynamic neon glow effect */
+@keyframes neonFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+nav ul li::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    background: linear-gradient(45deg, 
+        #ff0000, #ff7300, #fffb00, #48ff00, 
+        #00ffd5, #002bff, #a200ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    opacity: 0;
+    border-radius: 10px;
+    animation: neonFlow 6s linear infinite;
+    transition: opacity 0.1s ease-in-out;
+}
+
+/* Hover effect */
+nav ul li:hover::before {
+    opacity: 1;
+}
+
+/* Neon border animation */
+nav ul li:hover {
+    border-image: linear-gradient(45deg, 
+        #ff0000, #ff7300, #fffb00, #48ff00, 
+        #00ffd5, #002bff, #a200ff, #ff00c8, #ff0000);
+    border-image-slice: 1;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+}
+
+nav ul li:active {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+/* Image Styles */
+.hero img {
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    filter: blur(3px);
+    transition: filter 0.6s ease-in-out;
+      
+}
+
+.hero img:hover {
+    filter: blur(0);
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.header-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
